@@ -24,3 +24,5 @@ app.listen(PORT || 4000, () => {
   console.log(`Listening on port ${PORT}`);
   connectDb();
 });
+
+module.exports = app;
