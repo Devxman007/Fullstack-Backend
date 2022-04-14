@@ -4,7 +4,7 @@ const cors = require("cors");
 
 require("dotenv").config();
 const productsRoute = require("./Routes/products");
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 
