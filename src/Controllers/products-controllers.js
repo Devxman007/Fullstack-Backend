@@ -4,7 +4,7 @@ const listProducts = async (req, res) => {
   try {
     const products = await productsService.listProducts();
     res.setHeader("Total", products.length);
-    res.json(products);
+    res.status(200).json(products);
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "Internal Erro" });
