@@ -6,11 +6,6 @@ describe("Calling /posts with GET", () => {
     const response = await request(app).get("/admin").send();
     expect(response.status).toBe(200);
   });
-
-  test("It should response with an Array", async () => {
-    const response = await request(app).get("/admin").send();
-    expect(response.body).toBeInstanceOf(Array);
-  });
 });
 
 describe("Creating a post without a title", () => {
