@@ -8,7 +8,7 @@ const validProduct = (req, res, next) => {
   if (Name === "" || ImageUrl === "") {
     return res
       .status(404)
-      .json({ message: "Please add all the required infomation" });
+      .json({ message: "Please add all the required info" });
   }
   next();
 };
